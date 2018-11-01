@@ -5,6 +5,7 @@ FROM: continuumio/miniconda3:latest
     Maintainer Jeremy Magland
     Version 0.1.0
     InstalledBy Michael Montgomery
+    TestedOn hpc.arizona.edu (with errors)(unsolved, as yet)
 
 %setup
 
