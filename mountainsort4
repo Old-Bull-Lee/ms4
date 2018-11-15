@@ -10,6 +10,11 @@ FROM: continuumio/miniconda3:latest
 %setup
 
 %post
+  echo "#################### update & install GTK+3.0"
+  apt-get update -y && apt-get upgrade -y
+  apt-get install libgtk-3-0 -y
+
+
   echo "################################## Activating conda environment"
   . /opt/conda/etc/profile.d/conda.sh
   conda create -n mountainlab
