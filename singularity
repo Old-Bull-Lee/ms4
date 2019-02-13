@@ -22,7 +22,7 @@ FROM: continuumio/miniconda3:latest
 #                       gperf bison python-dbusmock -y
 
   echo "############## install nodejs #############"
-  curl -sL https://deb.nodesource.com/setup_11.x | -E bash -
+  curl -sL https://deb.nodesource.com/setup_11.x | bash -
   apt-get install -y nodejs
 
   echo "################################## Activating conda environment"
