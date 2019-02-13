@@ -14,7 +14,7 @@ FROM: continuumio/miniconda3:latest
   
   apt-get update -y && apt-get upgrade -y
   apt-get install apt-utils build-essential \
-  	  	  libgtk-3-0 libXscrnSaver -y
+  	  	  libgtk-3-0 libXss1 -y
 
 #  	  	       clang libdbus-1-dev libgtk-3-dev \
 #		       libnotify-dev libgnome-keyring-dev libgconf2-dev \
