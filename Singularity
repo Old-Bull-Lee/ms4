@@ -13,7 +13,8 @@ FROM: continuumio/miniconda3:latest
   echo "############## apt-get update & install (misc)"
   
   apt-get update -y && apt-get upgrade -y
-  apt-get install apt-utils build-essential libgtk-3-0 -y
+  apt-get install apt-utils build-essential \
+  	  	  libgtk-3-0 libXscrnSaver -y
 
 #  	  	       clang libdbus-1-dev libgtk-3-dev \
 #		       libnotify-dev libgnome-keyring-dev libgconf2-dev \
