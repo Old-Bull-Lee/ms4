@@ -14,7 +14,9 @@ FROM: continuumio/miniconda3:latest
   
   apt-get update -y && apt-get upgrade -y
   apt-get install apt-utils build-essential \
-  	  	  libgtk-3-0 libxss1 -y
+  	  	  libgtk-3-0 \
+		  libxss1 \
+		  libgconf-2-4 -y
 
 #  	  	       clang libdbus-1-dev libgtk-3-dev \
 #		       libnotify-dev libgnome-keyring-dev libgconf2-dev \
@@ -25,6 +27,9 @@ FROM: continuumio/miniconda3:latest
   echo "############## install nodejs #############"
   curl -sL https://deb.nodesource.com/setup_11.x | bash -
   apt-get install -y nodejs
+
+  echo "############## install electronjs #########"
+  npm i -D electron@latest
 
   echo "################################## Activating conda environment"
   . /opt/conda/etc/profile.d/conda.sh
