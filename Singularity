@@ -16,7 +16,8 @@ FROM: continuumio/miniconda3:latest
   apt-get install apt-utils build-essential \
   	  	  libgtk-3-0 \
 		  libxss1 \
-		  libgconf-2-4 -y
+		  libgconf-2-4 \
+		  libnss3 -y
 
 #  	  	       clang libdbus-1-dev libgtk-3-dev \
 #		       libnotify-dev libgnome-keyring-dev libgconf2-dev \
