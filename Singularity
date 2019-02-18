@@ -53,7 +53,7 @@ FROM: continuumio/miniconda3:latest
 			    qt-mountainview
 
 #  echo "################################# modify fontconfig to fix bug"
-#  conda install -c conda-forge fontconfig==2.12.6
+  conda install -c conda-forge fontconfig==2.12.6
   
   echo "################################## Testing installation"
   ml-list-processors
